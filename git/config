@@ -1,0 +1,37 @@
+[alias]
+	br = "branch"
+	ci = "commit"
+	cm = "commit -m"
+	co = "checkout"
+	df = "diff"
+	lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+	st = "status -sb"
+	undo = "reset --soft HEAD~1"
+
+[core]
+	editor = "nvim"
+	whitespace = "trailing-space,space-before-tab"
+
+[credential "https://gist.github.com"]
+	helper = ""
+	helper = "/nix/store/13hixqsd12vpsgjzc89fn1764ypqrqhk-gh-2.100.0/bin/gh auth git-credential"
+
+[credential "https://github.com"]
+	helper = ""
+	helper = "/nix/store/13hixqsd12vpsgjzc89fn1764ypqrqhk-gh-2.100.0/bin/gh auth git-credential"
+
+[gpg]
+	format = "openpgp"
+
+[gpg "openpgp"]
+	program = "/nix/store/0prm77nf3lpljd30wbvh7c3alv2glqc7-gnupg-2.4.9/bin/gpg"
+
+[init]
+	defaultBranch = "main"
+
+[pull]
+	rebase = false
+
+[user]
+	email = "carlodalcin10@gmail.com"
+	name = "CarloDalCin"
