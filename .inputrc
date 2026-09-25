@@ -1,0 +1,20 @@
+set show-all-if-ambiguous on
+set menu-complete-display-prefix on
+set colored-stats on
+set colored-completion-prefix on
+set completion-ignore-case on
+
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+$if mode=vi
+    set keymap vi-insert
+    "\t": menu-complete
+    "\e[Z": menu-complete-backward
+
+    set keymap vi-command
+    "\t": menu-complete
+$else
+    "\t": menu-complete
+    "\e[Z": menu-complete-backward
+$endif
