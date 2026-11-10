@@ -1,0 +1,20 @@
+confirm-close-surface = false
+
+cursor-style = block
+cursor-style-blink = false
+
+font-family = "CaskaydiaCove Nerd Font"
+font-size = 14
+font-feature = -liga
+font-feature = -calt
+
+mouse-hide-while-typing = false
+
+scrollback-limit = 2000
+
+shell-integration = detect
+
+window-decoration = true
+
+window-padding-x = 0
+window-padding-y = 0
