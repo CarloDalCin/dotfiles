@@ -11,27 +11,27 @@
 [core]
 	editor = "nvim"
 	whitespace = "trailing-space,space-before-tab"
+    excludesfile = "~/.config/git/ignore"
 
-[credential "https://gist.github.com"]
-	helper = ""
-	helper = "/nix/store/13hixqsd12vpsgjzc89fn1764ypqrqhk-gh-2.100.0/bin/gh auth git-credential"
-
-[credential "https://github.com"]
-	helper = ""
-	helper = "/nix/store/13hixqsd12vpsgjzc89fn1764ypqrqhk-gh-2.100.0/bin/gh auth git-credential"
+; [url "git@github.com"]
+;     insteadOf = https://github.com
+;
+; [url "git@://github.com:"]
+;     insteadOf = https://://github.com/
 
 [gpg]
-	format = "openpgp"
+	format = "ssh"
 
-[gpg "openpgp"]
-	program = "/nix/store/0prm77nf3lpljd30wbvh7c3alv2glqc7-gnupg-2.4.9/bin/gpg"
+[commit]
+    gpgsign = true
 
 [init]
 	defaultBranch = "main"
 
 [pull]
-	rebase = false
+	rebase = true
 
 [user]
 	email = "carlodalcin10@gmail.com"
 	name = "CarloDalCin"
+    signingkey = ~/.ssh/github
