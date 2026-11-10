@@ -1,0 +1,5 @@
+# SSH: ignore all keys and files in .ssh directories except config
+**/.ssh/*
+!**/.ssh/config
+!**/.ssh/config.d/
+!**/.ssh/config.d/**
