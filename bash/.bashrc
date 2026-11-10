@@ -13,6 +13,8 @@ export EDITOR=nvim
 export VISUAL=nvim
 export MANPAGER="nvim +Man!"
 
+export PATH="$HOME/.local/bin/:$PATH"
+
 shopt -s histappend
 shopt -s extglob
 shopt -s globstar
@@ -48,3 +50,7 @@ if [[ $TERM != "dumb" ]]; then
   eval "$(starship init bash)"
 fi
 
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/carlo/.local/bin:$PATH"
